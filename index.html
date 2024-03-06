@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Decodificador</title>
+</head>
+<body>
+<main>
+    <h1 class="title-conteudo">Decodificador</h1>
+    <section class="conteudo">
+
+        <div>
+            <textarea id="texto" placeholder="Digite aqui" onkeypress="validacao(event)"></textarea>
+            <div class="botoes">
+                <input type="button" value="Criptografar" onclick="base64Encode()"/>
+                <input type="button" value="Descriptografar" onclick="base64Decode()"/>
+            </div>
+        </div>
+
+
+        <div>
+        <textarea id="resultado" class="input-principal" placeholder="A mensagem criptografada aparecerá aqui"
+                  disabled></textarea>
+            <div class="botoes">
+                <input class="botão-resultado" type="button" value="Copiar" onclick="copiarTexto(event)"/>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="rodape">
+    <div>
+        <p>Desenvolvido por Hugo Duarte</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

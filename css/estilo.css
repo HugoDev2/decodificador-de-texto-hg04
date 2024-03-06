@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    margin-bottom: 5%;
+}
+
+.title-conteudo {
+    margin-top: 2%;
+    margin-left: 35%;
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+    background-color: #000;
+    width: 600px;
+    opacity: 70%;
+
+}
+.title-conteudo h1 {
+    padding: 1rem;
+    opacity: 100%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+label, textarea {
+    display: block;
+}
+
+textarea {padding: 1.5rem;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: black;
+    width: 550px;
+    height: 500px;
+    border-radius: 1rem;
+    background-color: white;
+    border: black dashed 3px;
+    opacity: 70%;
+
+}
+
+input {
+    background-color: black;
+    border: #fff solid 1px;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+input:hover {
+    background-color: red;
+    color: black;
+}
+.botoes {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.rodape {
+    padding: 25px 0 20px;
+    font-size: 15px;
+    line-height: 24spx;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    background-color: black;
+}
+
+.resultado {
+    background-color: white;
+}
+
+.input-principal{
+width: 70%;
+}
+
+.botão-resultado{
+    margin-right: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    textarea {
+        width: 80%;
+    }
+    .botoes input {
+        width: 80%;
+    }
+}
+
+/* responsividade */
+
+@media (max-width: 1280px) {
+
+    .conteudo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    textarea {
+        width: 350px;
+        height: 300px;
+    }
+    .title-conteudo {
+        margin-top: 5%;
+        margin-left: 25%;
+        text-align: center;
+        border-radius: 1rem;
+        color: white;
+        width: 600px;
+        height: 10%;
+        background-color: #000;
+        border: #fff solid 1px;
+        opacity: 70%;
+
+    }
+    .title-conteudo h1 {
+        padding: 1rem;
+        opacity: 100%;
+        font-size: 1.5rem;
+    }
+
+}
+@media (max-width: 800px) {
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    textarea {
+
+        width: 550px;
+        height: 350px;
+    }
+    .title-conteudo {
+        margin-top: 5%;
+        margin-left: 3.5rem;
+        text-align: center;
+        border-radius: 1rem;
+        color: white;
+        background-color: #000;
+        width: 85%;
+        height: 10%;
+        border: #fff solid 1px;
+        opacity: 70%;
+
+    }
+    .title-conteudo h1 {
+        padding: 1rem;
+        opacity: 100%;
+        font-size: 1.5rem;
+    }
+
+}
+@media (max-width: 390px) {
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    textarea {
+        width: 86%;
+        height: 150px;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+    }
+    .title-conteudo {
+        margin-top: 5%;
+        margin-left: 1.5rem;
+        text-align: center;
+        border-radius: 1rem;
+        color: white;
+        background-color: #000;
+        width: 85%;
+        height: 10%;
+        border: #fff solid 1px;
+        opacity: 70%;
+
+    }
+    .title-conteudo h1 {
+        padding: 0.5rem;
+        opacity: 100%;
+        font-size: 1.5rem;
+    }
+    input {
+        background-color: rgb(52, 52, 59);
+        color: white;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+
+}
